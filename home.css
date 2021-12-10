@@ -1,0 +1,270 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: white;
+	color: grey;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+
+header {
+	height: 25%;
+	background-size: cover;
+	background-position: center;
+}
+
+section {
+	height: 100%;
+	padding: 80px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+p {
+	text-align: center;
+	margin-bottom: 10px;
+	line-height: 1.5;
+	display: inline-block;
+	width: 50%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+}
+
+input {
+	-webkit-border-radius: 5px; //For Safari, etc.
+    -moz-border-radius: 5px; //For Mozilla, etc.
+    border-radius: 5px; //CSS3 Feature
+}
+
+a {
+	color: grey;
+	text-decoration: none;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.2s;
+}
+
+.logo {
+	position: absolute;
+	width: auto;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.hours {
+	position: absolute;
+	list-style: none;
+	margin-top: 10px;
+	top: 0;
+	left: 0;
+}
+
+.hours li {
+	display: inline-block;
+}
+
+.hours li a:link,
+.hours li a:visited{
+	color: grey;
+	text-decoration: none;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.2s;
+}
+
+.hours li a:hover,
+.hours li a:active {
+	border-bottom: 2px solid #00bfff;
+}
+
+.main-nav {
+	position: absolute;
+	float: right;
+	list-style: none;
+	margin-top: 10px;
+	top: 0;
+	right: 10;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+	padding: 8px 0;
+	color: grey;
+	text-decoration: none;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+	border-bottom: 2px solid #00bfff;
+}
+
+
+/* BUTTONS & ICONS */
+
+.icon:link,
+.icon:visited {
+	display: inline-block;
+	padding: 5px 15px;
+	font-weight: 200;
+	text-decoration: none;
+	border-radius: 100px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.icon-full:link,
+.icon-full:visited {
+	background-color: red;
+	border: 1px solid red;
+	color: #fff;
+	margin-right: 5px;
+}
+
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	padding: 5px 15px;
+	font-weight: 200;
+	text-decoration: none;
+	border-radius: 100px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+	background-color: red;
+	border: 1px solid red;
+	color: #fff;
+	margin-right: 5px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+	border: 1px solid #00bfff;
+	color: grey;
+}
+
+.btn:hover,
+.btn:active{
+	background-color: red;
+}
+
+.btn-full:hover,
+.btn-full:active {
+	border: 1px solid red;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+	border: 1px solid red;
+	color: #fff;
+}
+
+/* ------ sections ------*/
+/* ------ SECTION 1 ------*/
+
+.section1 {
+	color: white;
+	text-align: center;
+	margin-top: 10%;
+	padding: 10px;
+}
+
+.seasonal {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/seasonal.jpg);
+}
+
+#section1 {
+	text-transform: uppercase;
+}
+
+/* ------ SECTION 2 ------*/
+.section2 {
+	text-align: center;
+	display: grid;
+	grid-template-columns: auto auto auto;
+ 	align-content: center;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 0 20px 10px 30px;
+  border-radius: 30px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+/*------ Section 3 ------*/
+
+.section3 {
+ 	align-content: center;
+ 	padding-top: 0;
+	margin-top: 0;
+}
+
+.ticket {
+	width: 50%;
+	float: left;
+}
+
+.ticketSection {
+	width: 40%;
+	float:right;
+	text-align: center;
+	padding-top: 100px;
+}
+
+/*------ Section 4 ------*/
+
+.section4 {
+	margin-top: 0;
+	padding-top: 0;
+	text-align: center;
+	display: grid;
+	grid-template-columns: auto auto auto;
+ 	align-content: center;
+ 	background-color: white;
+}
+
+/*------ Footer ------*/
+.footer {
+	background-color: #1E90FF;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	color: white;
+	text-align: center;
+}
